@@ -1,41 +1,26 @@
 # Triversi Oyunu
 
-Bu proje, klasik Reversi (Othello) oyununun bir uyarlamasıdır. Oyunda standart kuralların yanı sıra ek özellikler ve stratejik hamlelerin önem kazandığı bazı geliştirmeler bulunmaktadır. Terminal tabanlı bu oyun, hem eğlenceli bir deneyim sunar hem de programlama becerilerini geliştirmek için harika bir örnek teşkil eder.
+Bu proje, **Triversi** isimli terminal tabanlı bir oyun uygulamasıdır. Oyun, klasik Reversi kurallarına benzer şekilde çalışır ancak ek özellikler ve stratejik değişikliklerle farklı bir deneyim sunar.
 
-## Özellikler
+## Oyun Hakkında
 
-- **Klasik Reversi Kuralları**: Oyunda taşların yerleştirilmesi, çevirme mekanikleri ve oyun sonu belirlemesi klasik Reversi kurallarına uygun şekilde uygulanır.
-- **Hamle Geri Al**: Yanlış bir hamle mi yaptınız? Oyunda hamle geri alma özelliğiyle son hamlenizi iptal edip yeniden oynayabilirsiniz.
-- **Hamle Önerileri**: Zorlandığınızda, geçerli hamlelerinizi görmenizi sağlayan bir "hamle öneri" modu mevcuttur.
-- **Zorluk Seviyeleri**: Oyun, farklı zorluk seviyelerinde oynanabilir. Başlangıç, orta ve ileri seviyeler arasından seçim yapabilirsiniz.
-- **Dinamik Tahta Görüntüleme**: Oyunun her turunda tahta durumu terminalde temiz bir biçimde görüntülenir.
-- **Puan Tablosu**: Tahtada her iki oyuncunun taş sayısını ve kazanma olasılığını gösteren bir puan tablosu.
+Triversi, iki oyuncu arasında oynanır ve amaç, oyun sonunda tahtada en fazla taş sahibi olmaktır. Ancak bu sürüm, oyuna dinamik bir yapı ve bazı yeni mekanikler ekleyerek daha farklı bir deneyim sunar.
 
-## Değişimler ve İyileştirmeler
+### Öne Çıkan Özellikler
+- **Dinamik Tahta**: Oyun sırasında taşların güncel durumunu ve puanları anlık olarak görebilirsiniz.
+- **Geçerli Hamle Kontrolü**: Oyuncular yalnızca geçerli hamleleri yapabilir. Hatalı bir hamlede uyarı alırsınız.
+- **Oyun Sonu Analizi**: Tahtada kalan taş sayısı ve kazananın adı açıkça belirtilir.
+- **Optimize Kod Yapısı**: Daha hızlı hamle hesaplama ve gelişmiş hata kontrolü.
 
-1. **Kullanıcı Dostu Arayüz**:
-   - Tahta düzeni sadeleştirildi ve taşlar kolayca ayırt edilebilir hale getirildi.
-   - Oyuncu hamlelerinde detaylı uyarılar ve yönlendirmeler sağlandı.
-   
-2. **Hamle Geçişi Otomasyonu**:
-   - Artık bir oyuncu hamle yapamayacak durumdaysa oyun otomatik olarak diğer oyuncuya geçiyor.
-   - Hamle yapılmadığında "Pas Geç" özelliği devreye giriyor.
+### Yapılan Değişiklikler
+1. **Hızlı Oyun Mekaniği**:
+   - Oyuncu hamlelerinin kontrolü sadeleştirildi ve daha akıcı bir oyun deneyimi sunuldu.
+2. **Yardımcı Araçlar**:
+   - Geçerli hamleleri görmek için ek bir özellik eklendi.
+3. **Kod Düzeni**:
+   - Program okunabilirliği artırıldı ve hata kontrolü güçlendirildi.
 
-3. **Yapay Zeka Geliştirmesi (Opsiyonel)**:
-   - Oyun bir yapay zeka oyuncusuyla oynanabilir hale getirildi.
-   - Yapay zeka, zorluk seviyesine göre farklı stratejiler uygular:
-     - **Kolay Seviye**: Rastgele geçerli bir hamle seçer.
-     - **Zor Seviye**: Kazanma olasılığını artıracak hamleleri analiz eder.
-
-4. **Gelişmiş Oyun Sonu Değerlendirmesi**:
-   - Oyun sonunda kazanan, kaybeden ve skor farkı detaylı bir şekilde sunulur.
-   - Beraberlik durumunda özel bir mesaj görüntülenir.
-
-5. **Performans Optimizasyonu**:
-   - Tahta durumlarının kontrol mekanizması hızlandırıldı.
-   - Geçerli hamlelerin hesaplanması için kullanılan algoritmalar iyileştirildi.
-
-## Kurulum ve Çalıştırma
+## Kurulum
 
 1. **Depoyu Klonlayın**:
    ```bash
